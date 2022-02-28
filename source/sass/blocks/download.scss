@@ -1,0 +1,87 @@
+.download {
+  margin-right: 10px;
+
+  @include _1280 {
+    margin-bottom: 20px;
+  }
+}
+
+.download:first-child {
+
+}
+
+p.download__link {
+  position: relative;
+  margin-left: 60px;
+}
+
+.download__link::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include _1280 {
+    background-size: 75% auto;
+  }
+}
+
+.download__link--pdf::before {
+  width: 53px;
+  height: 24px;
+  left: -60px;
+  background-image: url("../img/icon-pdf.png");
+}
+
+.download__link--youtube::before {
+  width: 36px;
+  height: 25px;
+  left: -45px;
+  background-image: url("../img/icon-youtube.png");
+
+  @include _1280 {
+    left: -60px;
+  }
+}
+
+.download__link--ppt::before {
+  width: 53px;
+  height: 24px;
+  left: -60px;
+  background-image: url("../img/ppt.png");
+}
+
+.download__link--variant::before {
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  background-image: url("../img/blank.jpg");
+}
+
+.download__link--mail::before {
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  background-image: url("../img/icon-letter.jpg");
+}
+
+p.download__link--mail {
+  margin-right: 35px;
+}
+
+.download__link--time::before {
+  width: 41px;
+  height: 41px;
+  left: -47px;
+  background-image: url("../img/icon-call.jpg");
+
+  @include _1280 {
+    left: -60px;
+  }
+}
+
+p.download__link {
+  margin-bottom: 0;
+}

@@ -1,0 +1,47 @@
+.author {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.author > a {
+  display: flex;
+  text-decoration: none;
+
+  @include _496 {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.author__img {
+  width: 90px;
+  height: 90px;
+
+  @include _496 {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+  }
+}
+
+.author p {
+  width: 280px;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  color: #c2573d;
+  margin: 0;
+  margin-left: 16px;
+
+  @include _496 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+.author span {
+  font-weight: 700;
+}

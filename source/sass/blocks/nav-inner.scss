@@ -1,0 +1,233 @@
+.nav-inner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+
+  @include _1060 {
+    padding-bottom: 60px;
+  }
+
+  @include _992 {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-around;
+    row-gap: 80px;
+  }
+
+  @include _596 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  @include _496 {
+    row-gap: 60px;
+  }
+}
+
+.nav-inner a {
+  position: relative;
+  font-family: "Book Antiqua", "Times", serif;
+  font-size: 29px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+
+  @include _1600 {
+    font-size: 1.81vw;
+  }
+
+  @include _1280 {
+    line-height: 25px;
+  }
+
+  @include _992 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  @include _767 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  @include _496 {
+    display: block;
+    width: 100%;
+  }
+}
+
+.nav-inner img {
+  margin-right: 16px;
+}
+
+.nav-inner li:last-of-type img {
+  margin-right: -16px;
+}
+
+.nav-inner__link {
+  padding-left: 90px;
+
+  @include _1280 {
+    padding-left: 75px;
+  }
+
+  @include _992 {
+    padding-left: 90px;
+  }
+
+  @include _596 {
+    width: 240px;
+  }
+
+  @include _496 {
+
+  }
+}
+
+
+
+/*
+
+
+.nav-inner__link--play,
+.nav-inner__link--face {
+  padding-left: 90px;
+
+  @include _1280 {
+    padding-left: 75px;
+  }
+
+  @include _496 {
+    margin-bottom: 200px;
+    padding-left: 0;
+  }
+}
+
+.nav-inner__link--pencil {
+  padding-left: 140px;
+
+  @include _1500 {
+    padding-left: 156px;
+  }
+
+  @include _496 {
+    padding-left: 0;
+  }
+}
+
+.nav-inner__link--air {
+  padding-left: 156px;
+
+  @include _1280 {
+    padding-left: 100px;
+  }
+
+  @include _496 {
+    padding-left: 0;
+  }
+}
+*/
+
+
+
+
+
+.nav-inner__link a::before {
+  position: absolute;
+  content: "";
+  top: 30%;
+  transform: translateY(-30%);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include _1500 {
+    background-size: 90% auto;
+  }
+
+  @include _1280 {
+    background-size: 80% auto;
+  }
+
+  @include _496 {
+    background-size: 65% auto;
+  }
+}
+
+.nav-inner__link--play a::before {
+  width: 75px;
+  height: 75px;
+  left: -90px;
+  background-image: url("../img/icon-play.png");
+  background-repeat: no-repeat;
+
+  @include _1280 {
+    left: -75px;
+  }
+
+  @include _992 {
+    left: -90px;
+  }
+
+  @include _496 {
+    left: -75px;
+  }
+}
+
+.nav-inner__link--pencil a::before {
+  width: 209px;
+  height: 182px;
+  left: -145px;
+  background-image: url("../img/pencils-big.png");
+  background-repeat: no-repeat;
+
+  @include _1500 {
+    left: -156px;
+  }
+
+  @include _1280 {
+    left: -130px;
+  }
+
+  @include _496 {
+    left: -110px;
+  }
+}
+
+.nav-inner__link--face a::before {
+  width: 75px;
+  height: 75px;
+  left: -90px;
+  background-image: url("../img/face.png");
+  background-repeat: no-repeat;
+
+  @include _1280 {
+    left: -75px;
+  }
+
+  @include _992 {
+    left: -90px;
+  }
+
+  @include _496 {
+    left: -75px;
+  }
+}
+
+.nav-inner__link--air a::before {
+  width: 164px;
+  height: 186px;
+  left: -156px;
+  background-image: url("../img/airplan.png");
+
+  @include _1280 {
+    left: -130px;
+  }
+
+  @include _496 {
+    left: -110px;
+  }
+}
+
+

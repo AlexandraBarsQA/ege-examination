@@ -1,0 +1,95 @@
+.user-form {
+  @include _767 {
+    width: 85%;
+  }
+
+  @include _696 {
+    width: 100%;
+  }
+}
+
+.user-form__filter {
+  max-width: 845px;
+  margin-top: 30px;
+}
+
+.user-form__item {
+  display: flex;
+}
+
+.user-form__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.4vw;
+  row-gap: 3.4vw;
+
+  @include _767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.user-form label {
+  font-size: 0;
+}
+
+.user-form__filter input[type="text"],
+.user-form__filter input[type="tel"],
+.user-form__filter input[type="email"] {
+  width: 100%;
+  height: 32px;
+  padding-top: 7px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid #a12628;
+}
+
+.user-form__filter input {
+  font-family: "Book Antiqua", "Times", serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #e74c3c;
+}
+
+p.user-form__note {
+  margin-top: 32px;
+}
+
+.user-form__note a {
+  color: #c2573d;
+}
+
+.user-form__pay {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 45px;
+
+  @include _596 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include _496 {
+    align-items: center;
+  }
+}
+
+input.user-form__btn {
+  display: block;
+  width: 170px;
+  font-family: inherit;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 23px;
+
+  @include _767 {
+    margin-top: 35px;
+    margin-left: auto;
+  }
+
+  @include _496 {
+    margin-left: 0;
+  }
+}

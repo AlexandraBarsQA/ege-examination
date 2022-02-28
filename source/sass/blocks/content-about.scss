@@ -1,0 +1,9 @@
+.content-about {
+  display: flex;
+  width: 100%;
+  padding-top: 32px;
+
+  @include _1370 {
+    flex-direction: column;
+  }
+}

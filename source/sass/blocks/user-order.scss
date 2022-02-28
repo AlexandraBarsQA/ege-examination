@@ -1,0 +1,142 @@
+.user-order__list {
+  border-bottom: 3px solid #257663;
+  margin-bottom: 26px;
+}
+
+.user-order__item {
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+  padding-right: 120px;
+  margin-bottom: 40px;
+
+  @include _1280 {
+    padding-right: 80px;
+  }
+
+  @include _1060 {
+    padding-right: 25px;
+  }
+
+  @include _992 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include _767 {
+    flex-wrap: wrap;
+  }
+
+  @include _496 {
+    justify-content: center;
+  }
+}
+
+.user-order__item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.user-order__img {
+  position: relative;
+  display: inline-block;
+  width: 179px;
+  height: 108px;
+}
+
+.user-order__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.user-order__info {
+  max-width: 482px;
+  display: inline-block;
+  color: #000000;
+  margin: 0;
+  margin-left: 40px;
+
+  @include _992 {
+    margin-left: 30px;
+  }
+
+  @include _802 {
+    max-width: 280px;
+    margin-left: 20px;
+  }
+
+  @include _596 {
+    max-width: 200px;
+  }
+
+  @include _496 {
+    margin-top: 20px;
+  }
+}
+
+.user-order__wrap {
+  width: 286px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 4vw;
+
+  @include _767 {
+    margin-left: auto;
+  }
+
+  @include _496 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.user-order__price {
+  font-family: "Book Antiqua", "Times", serif;
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: #e74c3c;
+  margin: 0;
+
+  @include _992 {
+    font-size: 28px;
+  }
+}
+
+.user-order__btn {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.user-order__btn::before,
+.user-order__btn::after  {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 17px;
+  top: 0;
+  background-color: #2a7967;
+}
+
+.user-order__btn::before {
+  transform: rotate(45deg);
+}
+
+.user-order__btn::after {
+  transform: rotate(-45deg);
+}

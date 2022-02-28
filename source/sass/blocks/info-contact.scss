@@ -1,0 +1,52 @@
+.info-contact__website {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.info-contact__text {
+  margin: 0;
+}
+
+.info-contact span {
+  display: block;
+  color: #c2573d;
+  margin-top: 24px;
+}
+
+.info-contact ul {
+  margin-bottom: 20px;
+
+  @include _696 {
+    margin-bottom: 12px;
+  }
+}
+
+.info-contact ul:last-of-type {
+  margin-bottom: 0;
+}
+
+.info-contact {
+  @include _1060 {
+    width: 300px;
+  }
+
+  @include _396 {
+    width: 100%;
+  }
+}
+
+.info-contact:nth-child(2),
+.info-contact:nth-child(3) {
+  margin-top: 12px;
+
+  @include _696 {
+    margin-top: 0;
+  }
+}
+
+.info-contact p,
+.info-contact a {
+  @include _596 {
+    font-size: 15px;
+  }
+}

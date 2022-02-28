@@ -1,0 +1,195 @@
+.excerpt {
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+
+  @include _992 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.excerpt__logo {
+  width: 215px;
+  height: 112px;
+
+  @include _992 {
+    width: 172px;
+    height: 89.6px;
+  }
+}
+
+.excerpt__logo img {
+  width: auto;
+  height: 100%;
+}
+
+.excerpt__item {
+  position: relative;
+  font-family: inherit;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 250px;
+
+  @include _1280 {
+    font-size: 23px;
+  }
+
+  @include _992 {
+    width: 630px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  @include _767 {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include _496 {
+    font-size: 20px;
+  }
+}
+
+.excerpt__item span {
+  display: block;
+  font-size: 17px;
+  font-weight: 100;
+  margin-top: 20px;
+
+  @include _496 {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.excerpt__item::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.excerpt--inner .excerpt__item {
+  @include _992 {
+    margin-top: 130px;
+    padding-bottom: 60px;
+  }
+}
+
+.excerpt--clear .excerpt__item {
+  @include _992 {
+    padding-bottom: 60px;
+  }
+}
+
+.excerpt--inner .excerpt__item--pencil::before {
+  width: 209px;
+  height: 182px;
+  top: -20px;
+  left: -160px;
+  background-image: url("../img/pencils-big.png");
+
+  @include _1280 {
+    background-size: 80% auto;
+  }
+
+  @include _992 {
+    top: -110px;
+    left: calc(50% - 100px / 2);
+    background-size: 65% auto;
+  }
+}
+
+.excerpt--inner .excerpt__item--plane::before {
+  width: 183px;
+  height: 187px;
+  top: -20px;
+  left: -190px;
+  background-image: url("../img/airplan.png");
+
+  @include _1280 {
+    background-size: 80% auto;
+  }
+
+  @include _1060 {
+    top: -110px;
+    background-size: 65% auto;
+  }
+
+  @include _992 {
+    left: calc(50% - 100px / 2);
+    background-size: 60% auto;
+  }
+}
+
+.excerpt--inner .excerpt__item--play::before {
+  width: 75px;
+  height: 75px;
+  top: 0;
+  left: -100px;
+  background-image: url("../img/icon-play.png");
+
+  @include _992 {
+    top: -95px;
+    left: calc(50% - 75px / 2);
+    background-size: 100% auto;
+  }
+
+  @include _767 {
+    top: -95px;
+    left: calc(50% - 75px / 2);
+    background-size: 85% auto;
+  }
+}
+
+.excerpt--inner .excerpt__item--face::before {
+  width: 75px;
+  height: 75px;
+  top: 0;
+  left: -100px;
+  background-image: url("../img/face.png");
+
+  @include _992 {
+    top: -95px;
+    left: calc(50% - 75px / 2);
+    background-size: 100% auto;
+  }
+
+  @include _767 {
+    top: -95px;
+    left: calc(50% - 75px / 2);
+    background-size: 85% auto;
+  }
+}
+
+.excerpt--about .excerpt__item {
+  @include _767 {
+    width: 70%;
+  }
+
+  @include _496 {
+    width: 80%;
+  }
+
+  @include _396 {
+    width: 100%;
+  }
+}
+
+.excerpt__item--empty {
+  margin-left: 120px;
+
+  @include _1280 {
+    margin-left: 100px;
+  }
+
+  @include _992 {
+    margin-left: 0;
+  }
+}

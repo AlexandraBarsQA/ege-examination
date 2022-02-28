@@ -1,0 +1,71 @@
+.order {
+  padding-top: 53px;
+  padding-bottom: 102px;
+
+  @include _767 {
+    padding-bottom: 65px;
+  }
+
+  @include _596 {
+    padding-bottom: 45px;
+  }
+}
+
+.order h1 {
+  padding-left: 26px;
+
+  @include _992 {
+    padding-left: 0;
+  }
+
+  @include _496 {
+    text-align: center;
+  }
+}
+
+.order__wrapp {
+  margin-top: 26px;
+}
+
+.order__sum {
+  font-family: "Book Antiqua", "Times", serif;
+  font-size: 25px;
+  letter-spacing: -0.5px;
+  color: #000000;
+  margin: 0;
+  margin-left: 26px;
+  margin-bottom: 50px;
+
+  @include _496 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.order__sum span {
+  display: inline-block;
+  font-family: "Book Antiqua","Times",serif;
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: #e74c3c;
+  margin-left: 3.38vw;
+
+  @include _496 {
+    display: block;
+    font-size: 34px;
+    margin-left: 0;
+  }
+}
+
+.order__form {
+  margin-left: 26px;
+
+  @include _696 {
+    margin-left: 0;
+  }
+}
+
+.order__form p {
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+.underline {
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.underline span {
+  background-image: linear-gradient(#a2eef0 60%, transparent 50%);
+  background-size: 100% 10px;
+  background-position: 0 120%;
+  background-repeat: no-repeat;
+}

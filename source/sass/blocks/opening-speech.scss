@@ -1,0 +1,35 @@
+.opening-speech h2 {
+  color: #c2573d;
+  margin-bottom: 20px;
+}
+
+.opening-speech__lead {
+  width: 90%;
+  color: #c2573d;
+
+  @include _767 {
+    width: 100%;
+  }
+}
+
+.opening-speech p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.opening-speech__list {
+  display: flex;
+  margin-top: 35px;
+
+  @include _767 {
+    flex-direction: column;
+  }
+}
+
+.opening-speech__item:first-of-type {
+  margin-right: 76px;
+
+  @include _767 {
+    margin-right: 0;
+  }
+}

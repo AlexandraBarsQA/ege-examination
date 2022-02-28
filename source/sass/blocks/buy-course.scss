@@ -1,0 +1,44 @@
+.buy-course {
+  display: flex;
+  align-items: center;
+
+  @include _596 {
+    justify-content: center;
+  }
+}
+
+.buy-course__img {
+  position: relative;
+  width: 200px;
+  height: 183px;
+  margin-right: 25px;
+
+  @include _992 {
+    width: 150px;
+    height: 137px;
+  }
+
+  @include _496 {
+    width: 110px;
+    height: 100px;
+    margin-right: 0;
+  }
+}
+
+.buy-course__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.buy-course a {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #26705e;
+  text-decoration: underline;
+}

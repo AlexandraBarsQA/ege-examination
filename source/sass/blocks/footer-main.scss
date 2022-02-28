@@ -1,0 +1,58 @@
+.footer-main {
+  border-top: 3px solid #257663;
+  border-bottom: 3px solid #257663;
+}
+
+.footer-main__wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, min-content));
+  justify-content: space-between;
+  row-gap: 30px;
+  padding-left: 26px;
+  padding-right: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include _1280 {
+    padding-right: 20px;
+  }
+
+  @include _1060 {
+    justify-content: start;
+  }
+
+  @include _696 {
+    justify-content: center;
+  }
+
+  @include _396 {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+/*
+
+.footer-main__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 26px;
+  padding-right: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include _1060 {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include _396 {
+    padding-left: 30px;
+  }
+}
+
+*/

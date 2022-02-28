@@ -1,0 +1,20 @@
+.books {
+  padding-left: 15px;
+}
+
+.books li {
+  padding-bottom: 15px;
+}
+
+.books a {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: underline;
+}
+
+a.books__link-active {
+  font-weight: 700;
+  text-decoration: none;
+}

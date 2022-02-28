@@ -1,0 +1,14 @@
+.link {
+  font-family: inherit;
+  font-size: 17px;
+  color: #257663;
+}
+
+.link--orange {
+  color: #c2573d;
+
+  @include _396 {
+    display: block;
+    font-size: 13px;
+  }
+}

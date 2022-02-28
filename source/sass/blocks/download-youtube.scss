@@ -1,0 +1,28 @@
+.download-youtube {
+  width: 270px;
+  display: flex;
+  align-items: center;
+}
+
+.download-youtube img {
+  width: 36px;
+  height: 25px;
+}
+
+.download-youtube__title {
+  position: relative;
+  color: #000000;
+  margin: 0;
+  margin-left: 7px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-youtube__title::before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 25px;
+  background-image: url("../img/icon-youtube.png");
+  background-repeat: no-repeat;
+}

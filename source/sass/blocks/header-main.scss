@@ -1,0 +1,17 @@
+.header-main {
+  position: relative;
+  width: 100%;
+  min-height: 57px;
+  background: url("../img/green-background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 15px #5e2411;
+
+  @include _992 {
+    min-height: 75px;
+  }
+
+  @include _496 {
+
+  }
+}

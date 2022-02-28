@@ -1,0 +1,53 @@
+.announce {
+  width: 370px;
+  margin-top: 20px;
+  margin-left: 45px;
+
+  @include _1370 {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  @include _1280 {
+    width: 70%;
+  }
+
+  @include _1060 {
+    width: 80%;
+  }
+
+  @include _992 {
+    width: 85%;
+  }
+
+  @include _802 {
+    width: 100%;
+  }
+}
+
+.announce__text p {
+  margin-top: 15px;
+  margin-bottom: 21px;
+}
+
+.announce__text {
+  @include _1370 {
+    width: 100%;
+  }
+}
+
+.announce__author {
+  margin-top: 30px;
+  margin-right: 16px;
+}
+
+.announce a {
+  color: #257663;
+}
+
+.announce__text h1 {
+  @include _496 {
+    text-align: center;
+  }
+}

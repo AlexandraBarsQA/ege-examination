@@ -1,0 +1,60 @@
+.program__list {
+  margin-bottom: 70px;
+
+  @include _992 {
+    width: 75%;
+  }
+
+  @include _596 {
+    width: 100%;
+  }
+}
+
+.program li {
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.program a {
+  display: block;
+  font-family: "Book Antiqua", "Times", serif;
+  font-size: 21px;
+  letter-spacing: -.5px;
+  color: #000000;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-decoration: none;
+
+  @include _496 {
+    font-size: 18px;
+  }
+}
+
+.program__item-active a {
+  font-weight: 700;
+  border: none;
+}
+
+.program__book li {
+  border: none;
+}
+
+.program__book a {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: underline;
+  padding: 0;
+
+  @include _496 {
+    font-size: 15px;
+  }
+}
+
+.program__book .books__link-active {
+  font-weight: 700;
+  text-decoration: none;
+}
